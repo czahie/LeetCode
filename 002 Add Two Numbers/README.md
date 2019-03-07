@@ -6,6 +6,6 @@
 + Initialize a new listNode can be easier:
 `p.next = new listNode(num)`  v.s.
 ```
-		listNode n = new listNode(num);      
-		p.next = n;
+listNode n = new listNode(num);      
+p.next = n;
 ```
