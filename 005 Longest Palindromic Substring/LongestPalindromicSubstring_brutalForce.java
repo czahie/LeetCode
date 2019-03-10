@@ -1,4 +1,4 @@
-class Solution {
+class LongestPanlindromicSubstring_brutalForce {
     public String longestPalindrome(String s) {
         int n = s.length(); 
         if (n <= 1) {  // base case
