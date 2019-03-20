@@ -1,7 +1,7 @@
 class StringToInteger {
     public int myAtoi(String str) {
-        boolean negative = false;
-        boolean sign = false;
+        boolean negative = false; // store if the result is negative
+        boolean sign = false; // check if already encountered + or - 
         int result = 0;
         for (char ch: str.toCharArray()) {
             if (ch == ' ' && !sign) {
@@ -21,7 +21,8 @@ class StringToInteger {
             }
             else {
                 sign = true;
-                int num = Character.getNumericValue(ch);
+                int num = Character.getNumericValue(ch); 
+                // check if the result has overflown
                 if (negative && (result > Integer.MAX_VALUE / 10 || result == Integer.MAX_VALUE / 10 && num >= 8)) {
                     return Integer.MIN_VALUE;
                 }
