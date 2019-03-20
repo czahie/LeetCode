@@ -1,4 +1,4 @@
-class RegularExpressionMatching_DP {
+class RegularExpressionMatching_DP x{
     public boolean isMatch(String s, String p) {
         boolean[][] dp = new boolean[s.length() + 1][p.length() + 1];
         dp[s.length()][p.length()] = true;
