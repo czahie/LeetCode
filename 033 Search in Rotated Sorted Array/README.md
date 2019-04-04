@@ -6,6 +6,9 @@
 ## A common template for binary search 
 Written in Python
 
+    # corner case
+    if not nums:
+        return -1
     # make sure the index is in the range
     start = 0
     end = len(nums) - 1
@@ -26,5 +29,6 @@ Written in Python
         return end
     if nums[start]  == target:
         return start
+    # not found
     return -1
        
