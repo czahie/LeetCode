@@ -5,7 +5,9 @@ class Solution {
             return res;
         }
         Arrays.sort(nums);
+        // careful about the range
         for (int i = 0; i < nums.length - 3; i++) {
+            // ignore duplicates
             if (i > 0 && nums[i] == nums[i - 1]) {
                 continue;
             }

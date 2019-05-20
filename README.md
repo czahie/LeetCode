@@ -26,6 +26,15 @@
 |023|[Merge K Sorted List](https://leetcode.com/problems/merge-k-sorted-lists/)|Hard|[Python](https://github.com/czahie/LeetCode/blob/master/023%20Merge%20K%20Sorted%20Lists/merge_k_sorted_lists_heap.py) [Java](https://github.com/czahie/LeetCode/blob/master/023%20Merge%20K%20Sorted%20Lists/MergeKSortedLists.java)|[Note](https://github.com/czahie/LeetCode/tree/master/023%20Merge%20K%20Sorted%20Lists)|Linked List, Divide and Conquer, Heap|Facebook, Amazon, Microsoft|
 |024|[Swap Nodes in Pairs](https://leetcode.com/problems/swap-nodes-in-pairs/)|Medium|[Python](https://github.com/czahie/LeetCode/blob/master/024%20Swap%20Nodes%20In%20Pairs/swap_nodes_in_pairs_iterative.py) [Java](https://github.com/czahie/LeetCode/blob/master/024%20Swap%20Nodes%20In%20Pairs/SwapNodesInPairs_Iterative.java)|[Note](https://github.com/czahie/LeetCode/tree/master/024%20Swap%20Nodes%20In%20Pairs)|Linked List|Microsoft, Amazon, Facebook|
 |025|[Reverse Nodes in k-Group](https://leetcode.com/problems/reverse-nodes-in-k-group/)|Hard|[Python](https://github.com/czahie/LeetCode/blob/master/025%20Reverse%20Nodes%20in%20k-Group/reverse_nodes_in_k_group_recursive.py) [Java](https://github.com/czahie/LeetCode/blob/master/025%20Reverse%20Nodes%20in%20k-Group/ReverseNodesInKGroup_Recursive.java)|[Note](https://github.com/czahie/LeetCode/tree/master/025%20Reverse%20Nodes%20in%20k-Group)|Linked List|Mathworks, Amazon, Facebook|
+|026|
+|027|
+|028|
+|029|
+|030|
+|031|
+|032|
+|033|
+|034|
 |043|[Multiply Strings](https://leetcode.com/problems/multiply-strings/)|Medium|[Python](https://github.com/czahie/LeetCode/blob/master/043%20Multiply%20Strings/multiply_strings.py) [Java](https://github.com/czahie/LeetCode/blob/master/043%20Multiply%20Strings/MultiplyStrings.java)| [Note](https://github.com/czahie/LeetCode/tree/master/043%20Multiply%20Strings)|Math, String| Facebook, Google, Microsoft|
 |050|[Pow(x, n)](https://leetcode.com/problems/powx-n/)|Medium|[Python](https://github.com/czahie/LeetCode/tree/master/050%20Pow(x%2C%20n)) [Java]()|[Note]()|Math, Binary Search|Facebook, LinkedIn, Amazon|
 |053| [Maximum Subarray](https://leetcode.com/problems/maximum-subarray/)| Easy | [Python](https://github.com/czahie/LeetCode/blob/master/053%20Maximum%20Subarray/maximum_subarray.py) [Java](https://github.com/czahie/LeetCode/blob/master/053%20Maximum%20Subarray/MaximumSubarray.java)| [Note](https://github.com/czahie/LeetCode/tree/master/053%20Maximum%20Subarray)| Array, Divide and Conquer, Dynamic Programming|Apple, Microsoft, Google|
