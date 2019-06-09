@@ -15,4 +15,4 @@ class Solution {
         }
         return global[n - 1][2];
     }
-}n
+}
