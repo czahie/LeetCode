@@ -1,40 +1,37 @@
-class StringToInteger {
+class Solution {
     public int myAtoi(String str) {
-        boolean negative = false; // store if the result is negative
-        boolean sign = false; // check if already encountered + or - 
-        int result = 0;
-        for (char ch: str.toCharArray()) {
-            if (ch == ' ' && !sign) {
-                continue;
-            }
-            else if (ch == '-' && !sign) {
-                negative = true;
-                sign = true;
-                continue;
-            }
-            else if (ch == '+' && !sign) {
-                sign = true;
-                continue;
-            }
-            else if (!Character.isDigit(ch)) {
+        int total = 0;
+        int sign = 1;
+        boolean hasSign = false;
+        
+        // get rid of leading whitespaces
+        str = str.trim();
+        
+        // empty String
+        if (str.length() == 0) {
+            return total;
+        }
+        
+        // check the sign
+        if (str.charAt(0) == '+' || str.charAt(0) == '-') {
+            sign = str.charAt(0) == '+' ? 1 : -1;
+            hasSign = true;
+        }
+        
+        for (int i = hasSign ? 1 : 0; i < str.length(); i++) {
+            int digit = str.charAt(i) - '0';
+            // not a digit
+            if (digit < 0 || digit > 9) {
                 break;
             }
-            else {
-                sign = true;
-                int num = Character.getNumericValue(ch); 
-                // check if the result has overflown
-                if (negative && (result > Integer.MAX_VALUE / 10 || result == Integer.MAX_VALUE / 10 && num >= 8)) {
-                    return Integer.MIN_VALUE;
-                }
-                else if (!negative && (result > Integer.MAX_VALUE / 10 || result == Integer.MAX_VALUE / 10 && num >= 7)) {
-                    return Integer.MAX_VALUE;
-                }
-                result =  result * 10 + num;
-            }           
+            // check overflow
+            if (Integer.MAX_VALUE / 10 < total || Integer.MAX_VALUE / 10 == total && Integer.MAX_VALUE % 10 < digit) {
+                return sign == 1 ? Integer.MAX_VALUE : Integer.MIN_VALUE;
+            }
+            
+            total = total * 10 + digit;
         }
-        if (negative) {
-            result = -result;
-        }
-        return result;
+        
+        return total * sign;
     }
 }
